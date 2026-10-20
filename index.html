@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHỐT VIỆC – Rõ thỏa thuận, hiểu pháp luật, chủ động bảo vệ bản thân</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--g50:#EDF7F1;--g100:#D3ECDC;--acc:#2E7D5B;--onacc:#fff;--b50:#EAF2FB;--b100:#CFE3F5;--b700:#2B5F8F;--ink:#1E3530;--mut:#52685F;--line:#D8E6DE;--warn:#FFF1D6;--warnt:#7A5200;--surf:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A17;--g50:#16261F;--g100:#23413A;--acc:#7FD0A6;--onacc:#0C1F16;--b50:#15263A;--b100:#21394F;--b700:#8FC2EE;--ink:#E6F1EC;--mut:#A6BBB2;--line:#2A3D36;--warn:#3A2F14;--warnt:#F2CF85;--surf:#16241F}}
+:root[data-theme="dark"]{--bg:#0F1A17;--g50:#16261F;--g100:#23413A;--acc:#7FD0A6;--onacc:#0C1F16;--b50:#15263A;--b100:#21394F;--b700:#8FC2EE;--ink:#E6F1EC;--mut:#A6BBB2;--line:#2A3D36;--warn:#3A2F14;--warnt:#F2CF85;--surf:#16241F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 66px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 clamp(15px,.35vw + 13.6px,17px)/1.6 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{line-height:1.25;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(1.65rem,min(5.2vw,7.2vh),3.1rem);font-weight:800}
+h2{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+a{color:var(--b700)}
+:focus-visible{outline:3px solid var(--b700);outline-offset:2px;border-radius:6px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:30px;height:30px;border-radius:9px;background:var(--g100);display:grid;place-items:center;color:var(--acc);font-style:normal}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--mut);font-size:.92rem;font-weight:500;white-space:nowrap}
+nav a:hover{background:var(--g50);color:var(--ink)}
+.hero{position:relative;overflow:hidden;scroll-snap-align:start;background:linear-gradient(180deg,var(--g50),var(--bg));display:flex;align-items:center;min-height:calc(100vh - 60px);min-height:calc(100svh - 60px - env(safe-area-inset-top,0px));padding:clamp(24px,5vh,48px) 0}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,40px);align-items:center;position:relative;z-index:1;width:100%}
+.lead{font-size:clamp(1rem,1.5vw,1.15rem);color:var(--mut)}
+.btn{font:600 1rem "Be Vietnam Pro",system-ui,sans-serif;background:var(--acc);color:var(--onacc);border:0;border-radius:12px;padding:13px 22px;cursor:pointer;text-decoration:none;display:inline-block;min-height:48px}
+.btn{transition:transform .2s,filter .2s}.btn:hover{filter:brightness(1.07);transform:translateY(-2px)}.btn:active{transform:scale(.97)}
+.btn.alt{background:var(--b100);color:var(--b700)}
+.phases{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0}
+.phases span{background:var(--b50);color:var(--b700);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:600}
+.demo{background:var(--surf);border:1px solid var(--line);border-radius:22px;padding:clamp(16px,2.2vw,22px);box-shadow:0 14px 34px -18px rgba(43,95,143,.35);animation:fl 7s ease-in-out infinite}
+.demo h3{color:var(--b700)}
+.demo ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.demo li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;animation:up .5s ease backwards;animation-delay:.6s}.demo li:nth-child(2){animation-delay:.85s}.demo li:nth-child(3){animation-delay:1.1s}.demo li:nth-child(4){animation-delay:1.35s}
+.dot{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:700;background:var(--g100);color:var(--acc)}
+.dot.w{background:var(--warn);color:var(--warnt)}
+section{padding:clamp(28px,6vh,52px) 0;scroll-snap-align:start}
+.s-g{background:var(--g50)}.s-b{background:var(--b50)}
+.tag{display:inline-block;background:var(--surf);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.85rem;color:var(--mut);margin-bottom:12px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,2.4vw,24px)}
+.q{padding:12px 0;border-bottom:1px dashed var(--line)}
+.q:last-of-type{border-bottom:0}
+.q b{display:block;margin-bottom:10px;font-weight:600}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opt{font:500 .95rem "Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer;min-height:44px}
+.opt[aria-pressed="true"].ok{background:var(--g100);border-color:var(--acc)}
+.opt[aria-pressed="true"].no{background:var(--warn);border-color:#D9A441;color:var(--warnt)}
+.res{margin-top:18px;border-radius:14px;padding:18px;background:var(--g50);display:none}
+.res.show{display:block}
+.res ul{margin:8px 0 0;padding-left:20px}
+.res .alert{background:var(--warn);color:var(--warnt);border-radius:10px;padding:12px 14px;margin-top:12px}
+.bar{height:10px;border-radius:99px;background:var(--b100);overflow:hidden;margin:6px 0 12px}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .3s}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+label{display:block;font-weight:600;font-size:.93rem;margin:12px 0 4px}
+input,textarea{width:100%;font:400 1rem "Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px}
+textarea{resize:vertical;min-height:70px}
+.msg{white-space:pre-wrap;background:var(--b50);border-radius:12px;padding:16px;font-size:.92rem;min-height:140px}
+.note{font-size:.9rem;color:var(--mut);margin-top:12px}
+.ev{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);cursor:pointer}
+.ev:last-of-type{border-bottom:0}
+.ev input{width:22px;height:22px;margin-top:3px;accent-color:var(--acc);flex:none}
+.ev span{font-weight:400;font-size:1rem}
+.ev small{display:block;color:var(--mut)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{background:var(--surf);border:1px solid var(--line);border-top:5px solid var(--acc);border-radius:14px;padding:18px}
+.step:nth-child(2){border-top-color:var(--b700)}
+.step h3{margin-bottom:.4em}
+.step ul{margin:0;padding-left:18px;font-size:.97rem}
+.sdg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sdg div{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px;font-size:.95rem}
+.sdg b{display:block;color:var(--b700);margin-bottom:4px}
+footer{padding:36px 0 48px;background:var(--g50);font-size:.9rem;color:var(--mut)}
+#ck,#ev{display:grid;grid-template-columns:1fr 1fr;column-gap:32px}#ck .q:nth-last-child(-n+2),#ev .ev:nth-last-child(-n+2){border-bottom:0}@media(max-width:720px){.hero .wrap,.two,.steps,.sdg,#ck,#ev{grid-template-columns:1fr}.hero{min-height:0}#ck .q:nth-last-child(2),#ev .ev:nth-last-child(2){border-bottom:1px dashed var(--line)}}@media(max-width:560px){.demo{display:none}.phases span{font-size:.82rem;padding:5px 11px}nav a{padding:8px 10px}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}@keyframes fl{50%{transform:translateY(-8px)}}#prog{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:0;background:linear-gradient(90deg,var(--acc),var(--b700));z-index:40}header{transition:box-shadow .3s}header.sc{box-shadow:0 8px 22px -14px rgba(30,53,48,.45)}nav{min-width:0;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{transition:background .2s,color .2s}nav a.on{background:var(--g100);color:var(--ink)}.hero::before,.hero::after{content:"";position:absolute;z-index:0;border-radius:50%;filter:blur(60px);pointer-events:none}.hero::before{width:min(420px,60vw);height:min(420px,60vw);right:-100px;top:-120px;background:var(--b100);opacity:.6;transform:translateY(var(--py,0px))}.hero::after{width:min(320px,50vw);height:min(320px,50vw);left:-100px;bottom:-120px;background:var(--g100);opacity:.8;transform:translateY(calc(var(--py,0px)*-.5))}.hero .wrap>div:first-child>*{animation:up .7s ease backwards}.hero .wrap>div:first-child>:nth-child(2){animation-delay:.1s}.hero .wrap>div:first-child>:nth-child(3){animation-delay:.2s}.hero .wrap>div:first-child>:nth-child(4){animation-delay:.3s}.sdg div,.step{transition:transform .25s,box-shadow .25s}@media(hover:hover){.sdg div:hover,.step:hover{transform:translateY(-4px);box-shadow:0 14px 26px -16px rgba(43,95,143,.4)}}.step{animation:up .45s ease backwards}.step:nth-child(2){animation-delay:.08s}.step:nth-child(3){animation-delay:.16s}.res.show{animation:up .35s ease backwards}.js .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.js .rv.in{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;scroll-snap-type:none}*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header><div class="wrap nav">
+<a class="logo" href="#top"><i>✓</i>CHỐT VIỆC</a>
+<nav aria-label="Chức năng"><a href="#kiem-tra">Kiểm tra</a><a href="#xac-nhan">Xác nhận</a><a href="#bang-chung">Bằng chứng</a><a href="#xu-ly">Xử lý</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Một công việc tốt bắt đầu từ những điều rõ ràng</h1>
+<p class="lead">CHỐT VIỆC biến quy định pháp luật lao động thành bảng kiểm, mẫu tin nhắn và các bước xử lý ngắn gọn, để bạn biết mình cần làm gì trước, trong và sau khi làm một công việc nào đó.</p>
+<a class="btn" href="#kiem-tra">Bắt đầu kiểm tra</a>
+<div class="phases"><span>Hiểu rõ trước khi nhận việc</span><span>Chủ động bảo vệ quyền lợi</span><span>Cách xử lý và tìm hỗ trợ khi gặp vấn đề</span></div>
+</div>
+<div class="demo" aria-hidden="true">
+<h3>Ví dụ: tin tuyển “phụ quán cà phê”</h3>
+<ul>
+<li><span class="dot">✓</span>Có tên quán và số liên hệ</li>
+<li><span class="dot">✓</span>Biết mức lương theo giờ</li>
+<li><span class="dot w">!</span>Chưa rõ ngày trả lương</li>
+<li><span class="dot w">!</span>Bị yêu cầu đặt cọc đồng phục</li>
+</ul>
+<p class="note" style="margin-bottom:0">CHỐT VIỆC chỉ ra điều còn thiếu và câu cần hỏi lại.</p>
+</div>
+</div></div>
+
+<section id="kiem-tra"><div class="wrap">
+<span class="tag">Chức năng 1</span>
+<h2>Kiểm tra điều kiện trước khi nhận việc</h2>
+<p>Trả lời nhanh 6 câu. Bạn sẽ thấy điều còn thiếu, dấu hiệu cần thận trọng và câu nên hỏi lại người tuyển.</p>
+<div class="card"><div id="ck"></div>
+<button class="btn" id="ckgo" type="button">Xem kết quả</button>
+<div class="res" id="ckres" role="status" aria-live="polite"></div></div>
+<p class="note">Căn cứ: Bộ luật Lao động 2019; mức lương tối thiểu theo Nghị định 293/2025/NĐ-CP khi công việc thuộc quan hệ lao động và đúng địa bàn áp dụng.</p>
+</div></section>
+
+<section id="xac-nhan" class="s-g"><div class="wrap">
+<span class="tag">Chức năng 2</span>
+<h2>Tạo bản xác nhận điều kiện việc làm</h2>
+<p>Điền những gì đã thống nhất. Tin nhắn mẫu bên phải cập nhật ngay, bạn chỉ cần sao chép và gửi cho người tuyển.</p>
+<div class="two">
+<div class="card">
+<label for="f0">Người tuyển dụng</label><input id="f0" placeholder="Tên anh/chị hoặc đơn vị">
+<label for="f1">Công việc cụ thể</label><input id="f1" placeholder="Ví dụ: phục vụ bàn tại quán X">
+<label for="f2">Tiền lương</label><input id="f2" placeholder="Ví dụ: 28.000 đồng/giờ">
+<label for="f3">Thời gian làm việc</label><input id="f3" placeholder="Ví dụ: Thứ 7, CN, 17h–22h">
+<label for="f4">Thời hạn thanh toán</label><input id="f4" placeholder="Ví dụ: Thứ 2 hằng tuần, chuyển khoản">
+<label for="f5">Thỏa thuận khác</label><textarea id="f5" placeholder="Ăn ca, đồng phục, phí… (nếu có)"></textarea>
+</div>
+<div class="card">
+<h3>Tin nhắn xác nhận</h3>
+<div class="msg" id="msg" aria-live="polite"></div>
+<p style="margin:14px 0 0"><button class="btn" id="cp" type="button">Sao chép tin nhắn</button></p>
+<p class="note">Bản xác nhận không mặc nhiên thay thế hợp đồng lao động. Nó giúp hai bên hiểu giống nhau và có căn cứ để đối chiếu. Về hình thức giao kết, bạn có thể tìm hiểu thêm hợp đồng lao động điện tử theo Nghị định 337/2025/NĐ-CP.</p>
+</div>
+</div>
+</div></section>
+
+<section id="bang-chung"><div class="wrap">
+<span class="tag">Chức năng 3</span>
+<h2>Nhật ký và bằng chứng lao động</h2>
+<p>Tạo một thư mục riêng cho mỗi công việc và lưu đủ 6 loại tài liệu dưới đây. Tick khi bạn đã lưu.</p>
+<div class="card">
+<div class="bar" aria-hidden="true"><i id="evbar"></i></div>
+<strong id="evtxt" aria-live="polite">Đã lưu 0/6 loại</strong>
+<div id="ev"></div>
+<p class="note">Không phải công việc bán thời gian nào cũng tự động thuộc diện bảo hiểm bắt buộc. Việc tham gia phụ thuộc loại quan hệ lao động và điều kiện cụ thể theo Luật Bảo hiểm xã hội 2024, pháp luật bảo hiểm y tế và Luật An toàn, vệ sinh lao động 2015.</p>
+</div>
+</div></section>
+
+<section id="xu-ly" class="s-b"><div class="wrap">
+<span class="tag">Chức năng 4</span>
+<h2>Khi quyền lợi bị ảnh hưởng</h2>
+<p>Chọn tình huống của bạn để xem ba bước: xác định vấn đề, hiểu quy định, hành động.</p>
+<div class="chips" id="chips" role="group" aria-label="Chọn tình huống"></div>
+<div class="steps" id="steps" aria-live="polite"></div>
+<p class="note">Tùy trường hợp, bạn có thể liên hệ công đoàn, cơ quan quản lý lao động ở địa phương hoặc tổ chức hỗ trợ người lao động. Với tình huống phức tạp, hãy hỏi người có chuyên môn pháp lý.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Vì sao “CHỐT VIỆC” ra đời</h2>
+<p>CHỐT VIỆC giúp người trẻ biến hiểu biết pháp luật thành hành động thiết thực để chủ động bảo vệ quyền lao động của mình. Từ mỗi cá nhân, dự án hướng đến một môi trường làm việc công bằng, an toàn và bền vững hơn, góp phần hiện thực hóa các mục tiêu SDG 4, SDG 8 và SDG 16.</p>
+<div class="sdg">
+<div><b>SDG 8 – Việc làm bền vững và tăng trưởng kinh tế</b>Nhận diện rủi ro lao động, làm rõ thỏa thuận và chủ động bảo vệ quyền lợi chính đáng.</div>
+<div><b>SDG 4 – Giáo dục chất lượng</b>Biến kiến thức pháp luật thành kỹ năng thực tiễn qua các tình huống về tiền lương, giờ làm và quyền lao động.</div>
+<div><b>SDG 16 – Hòa bình, công lý và các thể chế vững mạnh</b>Hướng dẫn cách lưu giữ bằng chứng, xử lý vấn đề và tìm kiếm sự hỗ trợ pháp lý phù hợp.</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p><strong>Lưu ý:</strong> Nội dung trên website mang tính tham khảo, không thay thế tư vấn pháp lý hay quyết định của cơ quan có thẩm quyền. Thông tin bạn nhập chỉ nằm trên thiết bị của bạn và không được gửi đi đâu.</p>
+<p style="margin:0">Dự án “CHỐT VIỆC” – thử nghiệm cùng sinh viên UEH.</p>
+</div></footer>
+
+<script>
+var CK=[
+{q:"Bạn biết rõ người tuyển dụng là ai?",a:"Đã biết tên, đơn vị, cách liên hệ",b:"Chưa rõ",ask:"Anh/chị hoặc đơn vị tên gì, địa chỉ và số liên hệ ở đâu?"},
+{q:"Công việc cụ thể đã được mô tả?",a:"Đã rõ nhiệm vụ",b:"Chưa rõ",ask:"Công việc hằng ngày gồm những gì, làm ở đâu?"},
+{q:"Mức lương đã được nói rõ?",a:"Đã rõ con số",b:"Chưa rõ",ask:"Lương tính theo giờ, ca hay sản phẩm? Có phụ cấp hay khoản trừ nào không?"},
+{q:"Thời gian làm việc đã thống nhất?",a:"Đã rõ ngày và giờ",b:"Chưa rõ",ask:"Làm những ngày nào, mấy giờ, nghỉ giải lao ra sao?"},
+{q:"Thời hạn trả lương đã thống nhất?",a:"Đã rõ ngày và cách trả",b:"Chưa rõ",ask:"Lương trả vào ngày nào, bằng tiền mặt hay chuyển khoản?"},
+{q:"Bạn có bị yêu cầu nộp phí hoặc đặt cọc?",a:"Không bị yêu cầu",b:"Có bị yêu cầu",ask:"Khoản tiền này là gì, dựa trên quy định nào và có được hoàn lại không?",fee:1}];
+var ans={},$=function(i){return document.getElementById(i)};
+$("ck").innerHTML=CK.map(function(c,i){return '<div class="q"><b>'+(i+1)+'. '+c.q+'</b><div class="opts"><button type="button" class="opt ok" data-i="'+i+'" data-v="ok" aria-pressed="false">'+c.a+'</button><button type="button" class="opt no" data-i="'+i+'" data-v="no" aria-pressed="false">'+c.b+'</button></div></div>'}).join("");
+$("ck").addEventListener("click",function(e){var t=e.target.closest(".opt");if(!t)return;var i=t.dataset.i;ans[i]=t.dataset.v;t.parentNode.querySelectorAll(".opt").forEach(function(o){o.setAttribute("aria-pressed",o===t)})});
+$("ckgo").onclick=function(){
+var miss=CK.filter(function(c,i){return ans[i]!=="ok"}),ok=CK.length-miss.length,feeBad=ans[5]==="no",r=$("ckres");
+var h='<h3>Bạn đã rõ '+ok+'/'+CK.length+' điều kiện</h3>';
+if(!miss.length)h+='<p>Các thông tin chính đã rõ. Hãy chuyển sang bước 2 để xác nhận lại bằng tin nhắn.</p>';
+else h+='<p>Những câu nên hỏi lại trước khi nhận việc:</p><ul>'+miss.map(function(c){return '<li>'+c.ask+'</li>'}).join("")+'</ul>';
+if(feeBad)h+='<div class="alert"><strong>Cần thận trọng:</strong> pháp luật lao động nghiêm cấm người sử dụng lao động yêu cầu người lao động đặt cọc hoặc bảo đảm bằng tiền, tài sản (Điều 17 Bộ luật Lao động 2019). Hãy hỏi rõ căn cứ, giữ lại tin nhắn và cân nhắc trước khi chuyển tiền.</div>';
+r.innerHTML=h;r.className="res show";r.scrollIntoView({behavior:"smooth",block:"nearest"})};
+function val(i,d){var v=$(i).value.trim();return v||d}
+function msg(){var D="[chưa điền]";$("msg").textContent="Chào "+val("f0","anh/chị")+", em xin xác nhận lại những điều mình đã trao đổi:\n\n• Công việc: "+val("f1",D)+"\n• Tiền lương: "+val("f2",D)+"\n• Thời gian làm việc: "+val("f3",D)+"\n• Thời hạn thanh toán: "+val("f4",D)+"\n• Thỏa thuận khác: "+val("f5","không có")+"\n\nNếu có điểm nào chưa đúng, anh/chị báo giúp em trước khi em bắt đầu làm việc ạ. Em cảm ơn!"}
+["f0","f1","f2","f3","f4","f5"].forEach(function(i){$(i).addEventListener("input",msg)});msg();
+$("cp").onclick=function(){var b=$("cp"),t=$("msg").textContent;function done(){b.textContent="Đã sao chép";setTimeout(function(){b.textContent="Sao chép tin nhắn"},1800)}
+try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}
+function fb(){var r=document.createRange();r.selectNodeContents($("msg"));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand("copy");done()}catch(e){b.textContent="Hãy nhấn giữ để chọn và sao chép"}}};
+var EV=[["Tin tuyển dụng","Chụp màn hình bài đăng, lưu đường dẫn"],["Nội dung trao đổi","Tin nhắn, email chốt lương, giờ làm"],["Lịch làm việc","Ca làm được giao, thay đổi lịch"],["Bảng chấm công","Số giờ hoặc số ca thực tế"],["Sản phẩm đã bàn giao","Ảnh, tệp, xác nhận đã nhận"],["Chứng từ thanh toán","Sao kê chuyển khoản, phiếu chi"]];
+$("ev").innerHTML=EV.map(function(e,i){return '<label class="ev" style="margin:0"><input type="checkbox" data-e="'+i+'"><span>'+e[0]+'<small>'+e[1]+'</small></span></label>'}).join("");
+$("ev").addEventListener("change",function(){var n=document.querySelectorAll("#ev input:checked").length;$("evbar").style.width=(n/6*100)+"%";$("evtxt").textContent="Đã lưu "+n+"/6 loại"+(n===6?" – đầy đủ!":"")});
+var SIT={
+"Chậm trả lương":[["Đối chiếu ngày trả đã thống nhất với ngày thực tế","Tính số tiền còn thiếu và số ngày chậm"],["Bộ luật Lao động 2019 quy định lương phải được trả trực tiếp, đầy đủ và đúng thời hạn","Xem lại bản xác nhận và tin nhắn thỏa thuận"],["Nhắn nhắc kèm mốc ngày cụ thể, giữ lại tin nhắn","Gom bảng chấm công, chứng từ","Chưa giải quyết: liên hệ công đoàn hoặc cơ quan quản lý lao động địa phương"]],
+"Yêu cầu nộp tiền":[["Ghi lại khoản tiền, lý do và người yêu cầu","Hỏi rõ có được hoàn lại không"],["Điều 17 Bộ luật Lao động 2019 nghiêm cấm yêu cầu đặt cọc hoặc bảo đảm bằng tiền, tài sản","Chi phí khác cần có căn cứ rõ ràng"],["Chưa chuyển tiền khi chưa xác minh","Lưu tin nhắn yêu cầu","Cân nhắc từ chối và báo cơ quan, tổ chức hỗ trợ"]],
+"Đổi điều kiện không báo trước":[["So sánh điều kiện mới với bản đã xác nhận","Xác định thay đổi về lương, giờ hay nhiệm vụ"],["Bộ luật Lao động 2019 về nội dung hợp đồng: thay đổi cần có sự thỏa thuận của hai bên"],["Yêu cầu bên tuyển xác nhận thay đổi bằng tin nhắn","Chưa đồng ý thì nói rõ bằng văn bản","Lưu toàn bộ trao đổi"]],
+"Mất an toàn lao động":[["Nhận diện nguy cơ: máy móc, hóa chất, làm đêm, thiếu bảo hộ","Chụp ảnh nếu an toàn"],["Luật An toàn, vệ sinh lao động 2015 quy định quyền và nghĩa vụ về an toàn khi làm việc","Bảo hiểm tai nạn tùy điều kiện áp dụng"],["Báo người phụ trách ngay, dừng việc nếu nguy hiểm","Khi bị thương, ưu tiên đến cơ sở y tế rồi lưu giấy tờ","Liên hệ công đoàn hoặc cơ quan có thẩm quyền"]]};
+var T=["1. Xác định vấn đề","2. Hiểu quy định","3. Hành động"],cur;
+$("chips").innerHTML=Object.keys(SIT).map(function(k){return '<button type="button" class="opt ok" aria-pressed="false" data-s="'+k+'">'+k+'</button>'}).join("");
+function show(k){cur=k;document.querySelectorAll("#chips .opt").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.s===k)});
+$("steps").innerHTML=SIT[k].map(function(s,i){return '<div class="step"><h3>'+T[i]+'</h3><ul>'+s.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul></div>'}).join("")}
+$("chips").addEventListener("click",function(e){var b=e.target.closest(".opt");if(b)show(b.dataset.s)});
+show("Chậm trả lương");
+(function(){var d=document,de=d.documentElement,rm=matchMedia("(prefers-reduced-motion:reduce)").matches,hd=d.querySelector("header"),pg=$("prog"),tk=0;
+function up(){var y=scrollY,h=de.scrollHeight-innerHeight;pg.style.width=(h>0?y/h*100:0)+"%";hd.classList.toggle("sc",y>8);if(!rm)de.style.setProperty("--py",(y*.2)+"px");tk=0}
+addEventListener("scroll",function(){if(!tk)tk=requestAnimationFrame(up)},{passive:true});up();
+if(!("IntersectionObserver" in window))return;
+var links=[].slice.call(d.querySelectorAll("nav a")),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+links.forEach(function(a){var s=d.querySelector(a.getAttribute("href"));if(s)so.observe(s)});
+if(rm)return;de.classList.add("js");
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var t=e.target;t.classList.add("in");ro.unobserve(t);setTimeout(function(){t.classList.remove("rv","in");t.style.transitionDelay=""},1000)})},{threshold:.12});
+d.querySelectorAll("section h2,section .tag,.card,.sdg div,.chips").forEach(function(t,i){t.classList.add("rv");t.style.transitionDelay=(i%3)*90+"ms";ro.observe(t)})})();
+</script>
+</body>
+</html>
